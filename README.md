@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# This repository contains responsive navigation menu and footer in react.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
