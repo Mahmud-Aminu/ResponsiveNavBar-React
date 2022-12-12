@@ -8,6 +8,24 @@ function App() {
     <div className="paige-container">
       <div className="container-wrap">
         <Header />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
+        <Shop />
       </div>
       <Footer />
     </div>

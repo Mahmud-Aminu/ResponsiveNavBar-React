@@ -8,7 +8,7 @@ export default function Navigation() {
   const expandNavBarHandle = () => {
     isActive === "nav__menu"
       ? setIsActive("nav__menu nav-active navLinkFade")
-      : setIsActive("nav__menu ");
+      : setIsActive("nav__menu");
     isToggler === "burger"
       ? setIsToggler("burger toggle")
       : setIsToggler("burger");
@@ -22,13 +22,13 @@ export default function Navigation() {
           <a href="/">Home</a>
         </li>
         <li>
-          <a href="/">Shop</a>
+          <a href="/">Blog</a>
         </li>
         <li>
-          <a href="/">Collection</a>
+          <a href="/">About</a>
         </li>
         <li>
-          <a href="/">Order</a>
+          <a href="/">Contact</a>
         </li>
       </ul>
       <div className={isToggler} onClick={expandNavBarHandle}>
