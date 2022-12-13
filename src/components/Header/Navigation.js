@@ -1,9 +1,36 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useCallback } from "react";
 import "./Navigation.css";
 
 export default function Navigation() {
   const [isActive, setIsActive] = useState("nav__menu");
   const [isToggler, setIsToggler] = useState("burger");
+  const [padding, setPadding] = useState("nav");
+  const [logo, setLogo] = useState("logo");
+  const [yAxis, setYAxis] = useState(0);
+
+  const handeleScrolling = useCallback(
+    (e) => {
+      const window = e.currentTarget;
+      if (yAxis > window.scrollY) {
+        setPadding("nav nav__padding");
+        setLogo("logo");
+      } else {
+        setPadding("nav scroll");
+        setLogo("shrink__logo");
+      }
+
+      setYAxis(window.scrollY);
+    },
+    [yAxis]
+  );
+
+  useEffect(() => {
+    setYAxis(window.scrollY);
+    window.addEventListener("scroll", handeleScrolling);
+    return () => {
+      window.removeEventListener("scroll", handeleScrolling);
+    };
+  }, [handeleScrolling]);
 
   const expandNavBarHandle = () => {
     isActive === "nav__menu"
@@ -15,8 +42,8 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="nav">
-      <h1 className="logo">Logo</h1>
+    <nav className={padding}>
+      <h1 className={logo}>Logo</h1>
       <ul className={isActive}>
         <li>
           <a href="/">Home</a>

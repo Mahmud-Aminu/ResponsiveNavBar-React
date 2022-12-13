@@ -10,12 +10,22 @@
     justify-content: space-between;
     align-items: center;
     background: rgb(250, 250, 250);
-    padding:3rem 0;
     margin: 0;
     border-bottom: 2px solid #924222;
     box-shadow: 0 2px 4px rgba(109, 36, 36, 0.26);
     
   }
+
+  .nav__padding{
+    padding: 1.5rem 0;
+    transition: all 0.5s ease;
+  }
+  .scroll{
+    padding: 0.5rem 0;
+    transition: all 0.5s ease;
+  }
+
+ 
   
 
 .nav .logo{
@@ -24,7 +34,16 @@
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #924222;
     padding-left: 1rem;
+    transition: all 0.5s ease;
     
+}
+.shrink__logo{
+  font-size: 2rem;
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #924222;
+    padding-left: 1rem;
+    transition: all 0.5s ease;
 }
 
 .nav__menu {
@@ -100,6 +119,7 @@
   @media only screen and (max-width: 768px) {
    .nav .logo{
        font-size: 2.5rem;
+       transition: all 0.5s ease;
     }
   }
 
