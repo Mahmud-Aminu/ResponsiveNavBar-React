@@ -1,7 +1,7 @@
 const Shop = () => {
   return (
     <div>
-      <h1>Shop</h1>
+      <h1>Testing scroll animation</h1>
     </div>
   );
 };

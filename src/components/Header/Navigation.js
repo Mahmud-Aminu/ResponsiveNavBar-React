@@ -59,9 +59,9 @@ export default function Navigation() {
         </li>
       </ul>
       <div className={isToggler} onClick={expandNavBarHandle}>
-        <div class="line1"></div>
-        <div class="line2"></div>
-        <div class="line3"></div>
+        <div className="line1"></div>
+        <div className="line2"></div>
+        <div className="line3"></div>
       </div>
     </nav>
   );

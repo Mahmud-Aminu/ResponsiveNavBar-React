@@ -1,6 +1,6 @@
 # Responsive Navbar and Footer in React
 
-This repository contains responsive navigation menu and footer in react.
+This repository contains responsive navigation menu and footer in react with a little bit of animation.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
